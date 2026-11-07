@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { registrationDecision } from "@/features/public-site/public-site";
+export default function RegisterPage() { const decision = registrationDecision(); return <main className="auth-page"><div className="auth-card"><span className="public-kicker">Account access</span><h1>Registration is not open.</h1><p>{decision.message}</p><div className="protected-notice">New access is created through administrator invitations, administrator-created accounts, or approved membership applications.</div><Link className="public-button secondary" href="/login">Go to login <span>→</span></Link><Link className="public-text-link" href="/">Return to the public website</Link></div></main>; }

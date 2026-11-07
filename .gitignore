@@ -1,0 +1,6 @@
+node_modules/
+.next/
+out/
+.analytics-test/
+.env*
+!.env.example

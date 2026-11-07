@@ -1,0 +1,1 @@
+export const organizationDataSource = { mode: "development-fixture" as const, liveSupabaseReady: false, setupMessage: "Supabase credentials are not configured. Changes are previewed locally and are not written to a remote database." };

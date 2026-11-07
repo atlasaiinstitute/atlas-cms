@@ -1,0 +1,496 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Home"
+    },
+    {
+      "path": "/:slug",
+      "title": "Slug"
+    },
+    {
+      "path": "/analytics",
+      "title": "Analytics"
+    },
+    {
+      "path": "/announcements",
+      "title": "Announcements"
+    },
+    {
+      "path": "/applications",
+      "title": "Applications"
+    },
+    {
+      "path": "/communities",
+      "title": "Communities"
+    },
+    {
+      "path": "/content",
+      "title": "Content"
+    },
+    {
+      "path": "/dashboard",
+      "title": "Dashboard"
+    },
+    {
+      "path": "/events",
+      "title": "Events"
+    },
+    {
+      "path": "/governance",
+      "title": "Governance"
+    },
+    {
+      "path": "/members",
+      "title": "Members"
+    },
+    {
+      "path": "/messages",
+      "title": "Messages"
+    },
+    {
+      "path": "/notifications",
+      "title": "Notifications"
+    },
+    {
+      "path": "/organizations",
+      "title": "Organizations"
+    },
+    {
+      "path": "/permissions",
+      "title": "Permissions"
+    },
+    {
+      "path": "/resources",
+      "title": "Resources"
+    },
+    {
+      "path": "/roles",
+      "title": "Roles"
+    },
+    {
+      "path": "/analytics/:section",
+      "title": "Analytics module"
+    },
+    {
+      "path": "/analytics/applications",
+      "title": "Application analytics"
+    },
+    {
+      "path": "/analytics/communities",
+      "title": "Community analytics"
+    },
+    {
+      "path": "/analytics/content",
+      "title": "Content analytics"
+    },
+    {
+      "path": "/analytics/engagement",
+      "title": "Engagement analytics"
+    },
+    {
+      "path": "/analytics/events",
+      "title": "Event analytics"
+    },
+    {
+      "path": "/analytics/governance",
+      "title": "Governance analytics"
+    },
+    {
+      "path": "/analytics/members",
+      "title": "Membership analytics"
+    },
+    {
+      "path": "/analytics/messaging",
+      "title": "Messaging analytics"
+    },
+    {
+      "path": "/analytics/organizations",
+      "title": "Organization analytics"
+    },
+    {
+      "path": "/analytics/platform",
+      "title": "Platform analytics"
+    },
+    {
+      "path": "/analytics/reports",
+      "title": "Report centre"
+    },
+    {
+      "path": "/analytics/resources",
+      "title": "Resource analytics"
+    },
+    {
+      "path": "/announcements/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/announcements/archived",
+      "title": "Archived"
+    },
+    {
+      "path": "/announcements/new",
+      "title": "New"
+    },
+    {
+      "path": "/announcements/review",
+      "title": "Review"
+    },
+    {
+      "path": "/announcements/scheduled",
+      "title": "Scheduled"
+    },
+    {
+      "path": "/applications/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/applications/new",
+      "title": "New"
+    },
+    {
+      "path": "/applications/settings",
+      "title": "Settings"
+    },
+    {
+      "path": "/communities/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/communities/new",
+      "title": "New"
+    },
+    {
+      "path": "/content/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/content/categories",
+      "title": "Categories"
+    },
+    {
+      "path": "/content/media",
+      "title": "Media"
+    },
+    {
+      "path": "/content/new",
+      "title": "New"
+    },
+    {
+      "path": "/content/pages",
+      "title": "Pages"
+    },
+    {
+      "path": "/content/review",
+      "title": "Review"
+    },
+    {
+      "path": "/content/tags",
+      "title": "Tags"
+    },
+    {
+      "path": "/events/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/events/calendar",
+      "title": "Calendar"
+    },
+    {
+      "path": "/events/new",
+      "title": "New"
+    },
+    {
+      "path": "/governance/appointments",
+      "title": "Appointments"
+    },
+    {
+      "path": "/governance/committees",
+      "title": "Committees"
+    },
+    {
+      "path": "/governance/decisions",
+      "title": "Decisions"
+    },
+    {
+      "path": "/governance/meetings",
+      "title": "Meetings"
+    },
+    {
+      "path": "/members/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/members/new",
+      "title": "New"
+    },
+    {
+      "path": "/messages/:conversationId",
+      "title": "Conversationid"
+    },
+    {
+      "path": "/messages/archived",
+      "title": "Archived"
+    },
+    {
+      "path": "/messages/moderation",
+      "title": "Moderation"
+    },
+    {
+      "path": "/messages/new",
+      "title": "New"
+    },
+    {
+      "path": "/messages/requests",
+      "title": "Requests"
+    },
+    {
+      "path": "/messages/search",
+      "title": "Search"
+    },
+    {
+      "path": "/messages/settings",
+      "title": "Settings"
+    },
+    {
+      "path": "/notifications/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/notifications/preferences",
+      "title": "Preferences"
+    },
+    {
+      "path": "/organizations/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/organizations/new",
+      "title": "New"
+    },
+    {
+      "path": "/resources/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/resources/categories",
+      "title": "Categories"
+    },
+    {
+      "path": "/resources/collections",
+      "title": "Collections"
+    },
+    {
+      "path": "/resources/my-resources",
+      "title": "My Resources"
+    },
+    {
+      "path": "/resources/new",
+      "title": "New"
+    },
+    {
+      "path": "/resources/review",
+      "title": "Review"
+    },
+    {
+      "path": "/roles/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/roles/new",
+      "title": "New"
+    },
+    {
+      "path": "/analytics/reports/:id",
+      "title": "Report details"
+    },
+    {
+      "path": "/analytics/reports/new",
+      "title": "Build report"
+    },
+    {
+      "path": "/announcements/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/communities/:id/announcements",
+      "title": "Announcements"
+    },
+    {
+      "path": "/communities/:id/applications",
+      "title": "Applications"
+    },
+    {
+      "path": "/communities/:id/content",
+      "title": "Content"
+    },
+    {
+      "path": "/communities/:id/events",
+      "title": "Events"
+    },
+    {
+      "path": "/communities/:id/members",
+      "title": "Members"
+    },
+    {
+      "path": "/communities/:id/messages",
+      "title": "Messages"
+    },
+    {
+      "path": "/communities/:id/resources",
+      "title": "Resources"
+    },
+    {
+      "path": "/communities/:id/settings",
+      "title": "Settings"
+    },
+    {
+      "path": "/content/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/content/:id/revisions",
+      "title": "Revisions"
+    },
+    {
+      "path": "/events/:id/attendance",
+      "title": "Attendance"
+    },
+    {
+      "path": "/events/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/events/:id/registrations",
+      "title": "Registrations"
+    },
+    {
+      "path": "/governance/committees/:id",
+      "title": "Id"
+    },
+    {
+      "path": "/governance/committees/new",
+      "title": "New"
+    },
+    {
+      "path": "/organizations/:id/announcements",
+      "title": "Announcements"
+    },
+    {
+      "path": "/organizations/:id/applications",
+      "title": "Applications"
+    },
+    {
+      "path": "/organizations/:id/content",
+      "title": "Content"
+    },
+    {
+      "path": "/organizations/:id/events",
+      "title": "Events"
+    },
+    {
+      "path": "/organizations/:id/members",
+      "title": "Members"
+    },
+    {
+      "path": "/organizations/:id/messages",
+      "title": "Messages"
+    },
+    {
+      "path": "/organizations/:id/resources",
+      "title": "Resources"
+    },
+    {
+      "path": "/resources/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/roles/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/governance/committees/:id/edit",
+      "title": "Edit"
+    },
+    {
+      "path": "/settings/branding",
+      "title": "Branding settings"
+    },
+    {
+      "path": "/settings/domains",
+      "title": "Custom domains"
+    },
+    {
+      "path": "/settings/white-label",
+      "title": "White-label controls"
+    },
+    {
+      "path": "/organizations/:id/settings/branding",
+      "title": "Organization branding"
+    },
+    {
+      "path": "/organizations/:id/settings/domains",
+      "title": "Organization domains"
+    },
+    {
+      "path": "/about",
+      "title": "About"
+    },
+    {
+      "path": "/activities",
+      "title": "Activities"
+    },
+    {
+      "path": "/publications",
+      "title": "Publications"
+    },
+    {
+      "path": "/events-public",
+      "title": "Public events"
+    },
+    {
+      "path": "/resources-public",
+      "title": "Public resources"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact"
+    },
+    {
+      "path": "/login",
+      "title": "Login"
+    },
+    {
+      "path": "/register",
+      "title": "Registration status"
+    },
+    {
+      "path": "/settings/public-access",
+      "title": "Public access settings"
+    },
+    {
+      "path": "/leadership",
+      "title": "Leadership"
+    },
+    {
+      "path": "/governance-public",
+      "title": "Public governance"
+    },
+    {
+      "path": "/projects",
+      "title": "Projects and initiatives"
+    },
+    {
+      "path": "/education",
+      "title": "Education and training"
+    },
+    {
+      "path": "/notices",
+      "title": "Public notices"
+    },
+    {
+      "path": "/communities-public",
+      "title": "Public communities"
+    }
+  ]
+}

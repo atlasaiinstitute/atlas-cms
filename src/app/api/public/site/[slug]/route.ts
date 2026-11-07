@@ -1,0 +1,3 @@
+import { NextResponse } from "next/server";
+import { getPublicOrganization, getPublicSiteData } from "@/features/public-site/public-site";
+export async function GET(_request: Request, { params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; const organization = getPublicOrganization(slug); if (!organization) return NextResponse.json({ error: "Organization not found" }, { status: 404 }); const data = getPublicSiteData(organization.id, organization.publicSettings); if (!data) return NextResponse.json({ error: "Public website unavailable" }, { status: 404 }); return NextResponse.json({ organization, data: { ...data, privateRecords: undefined } }); }

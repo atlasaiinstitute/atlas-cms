@@ -1,0 +1,44 @@
+{
+  "name": "atlas-cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test:tenant": "node scripts/validate-tenant-isolation.mjs",
+    "test:analytics": "rm -rf .analytics-test; tsc --target ES2020 --module commonjs --strict --skipLibCheck --outDir .analytics-test --rootDir src/services src/services/analytics-calculations.ts && node --test tests/analytics.test.cjs; result=$?; rm -rf .analytics-test; exit $result",
+    "test:audit": "rm -rf .audit-test; tsc --target ES2020 --module commonjs --strict --skipLibCheck --outDir .audit-test --rootDir src/services src/services/audit-csv.ts && node --test tests/audit-logs.test.cjs; result=$?; rm -rf .audit-test; exit $result",
+    "test:step18-audit": "node scripts/validate-step18-audit.mjs",
+    "test:public-access": "node --test tests/public-access.test.cjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^4.1.0",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "@tanstack/react-query": "^5.66.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
+    "next": "^15.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.54.2",
+    "tailwind-merge": "^3.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "^15.5.6",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}

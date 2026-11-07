@@ -1,0 +1,23 @@
+export type AuditOutcome = "success" | "failure" | "denied";
+export type AuditSeverity = "informational" | "warning" | "high_risk";
+export type AuditEvent = {
+  id: string;
+  event_type: string;
+  action: string;
+  actor_user_id: string | null;
+  actor_display_name: string | null;
+  actor_role_context: Record<string, unknown>;
+  organization_id: string | null;
+  community_id: string | null;
+  target_record_type: string | null;
+  target_record_id: string | null;
+  outcome: AuditOutcome;
+  severity: AuditSeverity;
+  is_administrative: boolean;
+  created_at: string;
+  source_module: string;
+  request_id: string | null;
+  change_summary: string;
+  change_details: { fields?: string[]; previous?: Record<string, unknown>; new?: Record<string, unknown> };
+  metadata: Record<string, unknown>;
+};

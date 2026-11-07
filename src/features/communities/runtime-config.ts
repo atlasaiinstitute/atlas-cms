@@ -1,0 +1,1 @@
+export const communityDataSource = { mode: "development-fixture" as const, liveSupabaseReady: false, setupMessage: "Supabase credentials are not configured. Community changes are previewed locally until the database connection is enabled." };

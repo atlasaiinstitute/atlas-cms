@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function LoginPage() { return <main className="auth-page"><div className="auth-card"><span className="public-kicker">ATLAS CMS</span><h1>Sign in to your workspace.</h1><p>Public information is available without an account. Login is only needed for protected actions and private workspace features.</p><button className="public-button primary auth-disabled" disabled>Authentication connects in the next platform step</button><Link className="public-text-link" href="/">Return to the public website</Link></div></main>; }

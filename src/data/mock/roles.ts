@@ -1,0 +1,14 @@
+import type { Permission, Role } from "@/features/roles/contracts";
+export const permissionFixtures: Permission[] = [
+  ...["view","update","settings.manage","members.view","members.invite","members.manage","roles.manage","analytics.view"].map((key) => ({ id: `org-${key}`, key: `organization.${key}`, name: key.replaceAll(".", " "), description: `Organization ${key}`, module: "Organization", scope: "organization" as const })),
+  ...["view","create","update","archive","members.view","members.manage","settings.manage"].map((key) => ({ id: `community-${key}`, key: `community.${key}`, name: key.replaceAll(".", " "), description: `Community ${key}`, module: "Community", scope: "community" as const })),
+  ...["view","review","assign","approve","reject","documents.verify"].map((key) => ({ id: `app-${key}`, key: `applications.${key}`, name: key.replaceAll(".", " "), description: `Applications ${key}`, module: "Applications", scope: "organization" as const })),
+  ...["view","create","update","publish","delete"].map((key) => ({ id: `content-${key}`, key: `content.${key}`, name: key, description: `Content ${key}`, module: "Content", scope: "organization" as const })),
+  { id: "admin-export", key: "members.export", name: "Export members", description: "Export authorized member data", module: "Administrative", scope: "organization" as const },
+];
+export const roleFixtures: Role[] = [
+  { id: "role-org-admin", name: "Organization Administrator", key: "organization_admin", description: "Manage one organization and its authorized operations.", scope: "organization", is_system: true, is_active: true, assigned_members: 3, permissions: ["organization.view","organization.update","organization.members.manage","organization.roles.manage","applications.view","applications.review","applications.approve","members.export"] },
+  { id: "role-org-reviewer", name: "Organization Reviewer", key: "organization_reviewer", description: "Review organization and membership applications.", scope: "organization", is_system: true, is_active: true, assigned_members: 4, permissions: ["organization.view","applications.view","applications.review","applications.documents.verify"] },
+  { id: "role-community-admin", name: "Community Administrator", key: "community_admin", description: "Manage a specific community scope.", scope: "community", is_system: true, is_active: true, assigned_members: 6, permissions: ["community.view","community.update","community.members.view","community.members.manage","applications.view","applications.review","applications.approve"] },
+  { id: "role-custom-research", name: "Research Program Coordinator", key: "research_program_coordinator", description: "Custom role for research-program operations.", scope: "organization", is_system: false, is_active: true, assigned_members: 2, permissions: ["organization.view","community.view","applications.view","members.export"] },
+];
