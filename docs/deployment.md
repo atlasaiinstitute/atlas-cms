@@ -43,4 +43,4 @@ Before applying the migration set to the connected Supabase project:
 
 ## Local verification
 
-The project has passed `npm ci`, `npm run typecheck`, `npm run lint`, and `npm run build` in the current workspace. Dependency installation reported 9 audit findings (7 moderate, 2 high); no automatic dependency upgrades were made. Re-run those commands from the repository root before release.
+The project has passed a clean `npm ci`, `npm audit` (0 vulnerabilities), `npm run typecheck`, `npm run lint`, all five project test suites, and `npm run build` after dependency remediation. Re-run these checks from the repository root before release.
