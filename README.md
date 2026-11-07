@@ -40,3 +40,8 @@ Persistence is prepared by `supabase/migrations/20261107000000_white_label_custo
 The platform now has a public institutional website layer at `/`, `/about`, `/activities`, `/publications`, `/events-public`, `/resources-public`, and `/contact`, with Login visible and public registration hidden by default. Public projections reuse existing CMS source records and exclude non-public, unpublished, member-only, private, and internal data. Organization slug/host resolution, the tenant-safe public read endpoint, registration guard, centralized access settings at `/settings/public-access`, and the Supabase/RLS preparation migration are included. See `STEP20_IMPLEMENTATION_REPORT.md` for the complete audit, security tests, and remaining authentication dependency.
 
 The expanded transparency surface also includes `/leadership`, `/governance-public`, `/projects`, `/education`, `/notices`, and `/communities-public`, plus configurable public navigation controls for enable/disable, rename, and reorder. Governance, notices, communities, and approved education content reuse existing source modules. Projects and approved leadership profiles show explicit source-gap notices because those dedicated public source projections do not yet exist; no fake or private records are exposed.
+
+
+## Deployment and Supabase setup
+
+For manual deployment from the private GitHub repository, see [docs/deployment.md](docs/deployment.md). The current Supabase project, local environment setup, migration status, and API checks are documented in [docs/supabase-setup.md](docs/supabase-setup.md). Real credentials are never committed.
