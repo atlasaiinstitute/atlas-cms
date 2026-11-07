@@ -4,3 +4,4 @@ out/
 .analytics-test/
 .env*
 !.env.example
+tsconfig.tsbuildinfo
